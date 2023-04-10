@@ -1,9 +1,10 @@
 import React from 'react';
+import Mainbanner from './Mainbanner';
 
 const Main = () => {
     return (
         <div>
-            This is main html
+            <Mainbanner/>
         </div>
     );
 };
