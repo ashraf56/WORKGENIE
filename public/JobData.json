@@ -38,7 +38,7 @@
        "phone": "+1-650-681-5100",
        "email": "jobs@tesla.com",
        "salary": "$90,000 - $130,000",
-       "job_type": ["onsite"],
+       "job_type": ["onsite","remote"],
        "job_description": "We are seeking an experienced Project Manager to oversee projects from inception to completion.",
        "job_responsibility": "Responsibilities include planning and executing project plans, managing project budgets, and communicating with stakeholders.",
        "educational_requirements": "Bachelor's degree in Business Administration or related field.",

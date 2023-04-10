@@ -1,3 +1,5 @@
+import { faLocation, faLocationDot, faMapLocation } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 const JobCard = ({job}) => {
@@ -5,11 +7,27 @@ const JobCard = ({job}) => {
     return (
         <div>
             
-  <div className="col">
-    <div className="card">
+  <div className="col h-100">
+    <div className="card h-100">
+        
       <div className="card-body">
+        <img src={image} alt="" className='img-fluid w-25' />
         <h5 className="card-title">{position_name}</h5>
-        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p className="card-text">{company_name}</p>
+        <div>
+        <button type="button" className="btn btn-outline-info me-2">{job_type[0]}</button>
+        <button type="button" className="btn btn-outline-info">{job_type[1]}</button>
+        </div>
+         <div className='pt-2 pb-3'>
+            <span className='text-secondary-emphasis' > <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon>   {company_address}</span> <br />
+           <span className='fs-6 fw-bold '>{salary}</span> 
+         </div>
+        <div className='bottom-0'>
+             <button type="button" className="btn btn-primary mt-auto">View Details</button>
+        </div>
+       
+
+
       </div>
     </div>
   </div>
