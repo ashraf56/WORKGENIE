@@ -8,7 +8,7 @@ const FeatureJobs = ({jobs}) => {
           <div className='text-center'>
           <h2>Featured Jobs</h2>
            <p>Explore thousands of job opportunities with all the information you need. Its your future</p> 
-           <div>
+           <div className='row row-cols-1 row-cols-md-2 g-4'>
             {
               jobs.map(job=> <JobCard job={job} key={job.id} ></JobCard> )
             }
