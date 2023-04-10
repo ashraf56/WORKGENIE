@@ -1,0 +1,64 @@
+[
+    {
+       "id": 1,
+       "image": "https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png",
+       "company_name": "Google",
+       "position_name": "Software Developer",
+       "company_address": "1600 Amphitheatre Parkway, Mountain View, CA 94043, USA",
+       "phone": "+1-650-253-0000",
+       "email": "jobs@google.com",
+       "salary": "$100,000 - $150,000",
+       "job_type": ["full-time", "onsite"],
+       "job_description": "We are seeking a talented software developer to join our team.",
+       "job_responsibility": "Responsibilities include developing software applications, debugging code, and working with team members to meet project goals.",
+       "educational_requirements": "Bachelor's degree in Computer Science or related field.",
+       "experiences": "3+ years of experience in software development."
+    },
+    {
+       "id": 2,
+       "image": "https://static.vecteezy.com/system/resources/previews/019/017/460/original/microsoft-transparent-logo-free-png.png",
+       "company_name": "Microsoft",
+       "position_name": "Marketing Manager",
+       "company_address": "One Microsoft Way, Redmond, WA 98052, USA",
+       "phone": "+1-425-882-8080",
+       "email": "jobs@microsoft.com",
+       "salary": "$80,000 - $120,000",
+       "job_type": ["full-time", "remote"],
+       "job_description": "We are seeking a creative and experienced Marketing Manager to develop and implement marketing strategies.",
+       "job_responsibility": "Responsibilities include conducting market research, developing marketing campaigns, and managing the marketing team.",
+       "educational_requirements": "Bachelor's degree in Marketing or related field.",
+       "experiences": "5+ years of experience in marketing."
+    },
+    {
+       "id": 3,
+       "image": "https://www.freepnglogos.com/uploads/tesla-logo-png-red-31.png",
+       "company_name": "Tesla",
+       "position_name": "Project Manager",
+       "company_address": "3500 Deer Creek Road, Palo Alto, CA 94304, USA",
+       "phone": "+1-650-681-5100",
+       "email": "jobs@tesla.com",
+       "salary": "$90,000 - $130,000",
+       "job_type": ["onsite"],
+       "job_description": "We are seeking an experienced Project Manager to oversee projects from inception to completion.",
+       "job_responsibility": "Responsibilities include planning and executing project plans, managing project budgets, and communicating with stakeholders.",
+       "educational_requirements": "Bachelor's degree in Business Administration or related field.",
+       "experiences": "7+ years of experience in project management."
+    },
+
+    {
+        "id": 4,
+        "image": "https://1000logos.net/wp-content/uploads/2016/10/Amazon-Logo.png",
+        "company_name": "Amazon",
+        "position_name": "Data Scientist",
+        "company_address": "410 Terry Ave N, Seattle, WA 98109, USA",
+        "phone": "+1-206-266-1000",
+        "email": "jobs@amazon.com",
+        "salary": "$120,000 - $180,000",
+        "job_type": ["full-time", "remote"],
+        "job_description": "We are seeking a Data Scientist to analyze large datasets and provide insights to the business.",
+        "job_responsibility": "Responsibilities include designing and implementing data models, analyzing data, and communicating findings to stakeholders.",
+        "educational_requirements": "Master's degree in Computer Science, Statistics or related field.",
+        "experiences": "5+ years of experience in data science."
+     }
+ ]
+ 
