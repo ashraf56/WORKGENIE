@@ -1,0 +1,29 @@
+{
+    "categories": [
+       {
+          "id": 1,
+          "category": "Technology Jobs",
+          "openings": 35,
+          "image": "https://cdn-icons-png.flaticon.com/512/1087/1087840.png"
+       },
+       {
+          "id": 2,
+          "category": "Healthcare Jobs",
+          "openings": 45,
+          "image": "https://cdn-icons-png.flaticon.com/512/10251/10251168.png"
+       },
+       {
+          "id": 3,
+          "category": "Business Jobs",
+          "openings": 30,
+          "image": "https://cdn-icons-png.flaticon.com/512/3281/3281412.png"
+       },
+       {
+          "id": 4,
+          "category": "Creative Jobs",
+          "openings": 20,
+          "image": "https://cdn-icons-png.flaticon.com/512/1601/1601913.png"
+       }
+    ]
+ }
+ 
