@@ -2,6 +2,7 @@ import { faBox, faContactBook, faLocationDot, faMailBulk } from '@fortawesome/fr
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
+import '../FeatureJobs/FeatureJobs.css'
 
 const JobDetail = () => {
 let {id}=useParams();
@@ -15,20 +16,19 @@ useEffect(()=>{
 
 },[])
   
- 
+
 
 let {experiences,educational_requirements,job_responsibility,job_description,job_type,salary,email,phone,company_address,position_name}=jobs;
 
     return (
         <div>
 
-<div>
-    <h2>Work Details
-</h2>
+<div className='text-center my-5  bg-success bg-opacity-75  '  >
+    <h2 className='py-5 text-light'>Work Details</h2>
 </div>
 
-            <div className='row align-items-center'>
-<div className="col-md-6">
+            <div className='row my-5'>
+<div className="col-md-7 px-2 pt-3">
 <div className='pb-3'>
 <span className='fs-6 fw-bold'>Job-description: </span> <span>{job_description}</span>
 
@@ -47,15 +47,15 @@ let {experiences,educational_requirements,job_responsibility,job_description,job
     </div>    
 </div>
 
-<div className="col-md-6">
+<div className="col-md-5">
 
-<div className="card h-100">
+<div className="card h-100 bg-info-subtle">
         
-      <div className="card-body">
+      <div className="card-body " >
        <h5>Job Detail</h5>
        <hr />
        <div>
-<p className='fw-semibold'> <FontAwesomeIcon icon={faBox} /> Job Title : {position_name}</p>
+<span className='fw-semibold pb-2'> <FontAwesomeIcon icon={faBox} /> Job Title : {position_name}</span> <br />
         <span className='fs-6  '> <strong>$ Salary</strong>: {salary}</span> 
        </div>
 
@@ -70,7 +70,7 @@ let {experiences,educational_requirements,job_responsibility,job_description,job
       
 
 </div>
-<button type="button" className="btn btn-info fw-bold ">Apply now</button>
+<button type="button" className="btn btn-success fw-bold ">Apply now</button>
 
             </div>
             </div>
