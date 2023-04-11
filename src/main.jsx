@@ -16,6 +16,7 @@ import { Jobloder } from './component/Jobloder';
 import ErrorPage from './component/Errorpage';
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,7 +27,8 @@ const router = createBrowserRouter([
       {
         path:'/', 
         element:<Main></Main>,
-        loader: () => fetch('/JobData.json')
+        loader: () => fetch('/JobData.json'),
+    
       },
 
 {
@@ -35,10 +37,17 @@ const router = createBrowserRouter([
   loader: () => fetch('/JobData.json')
 },
 {
+  path:'app', 
+  element:<App/>,
+  loader: () => fetch('/JobData.json')
+},
+
+{
   path:'main/:id', 
   element:<JobDetail></JobDetail>,
   loader: () => fetch('/JobData.json')
 },
+
 {
   path:'statistics', element: <Statistics></Statistics>
 },

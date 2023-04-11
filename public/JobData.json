@@ -64,5 +64,39 @@
         "experiences": "5+ years of experience in data science.",
         "key_id": "job1423"
      }
+,
+     {
+      "id": 5,
+      "image": "https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png",
+      "company_name": "Apple",
+      "position_name": "Senior iOS Developer",
+      "company_address": "1 Apple Park Way, Cupertino, CA 95014, USA",
+      "phone": "+1-408-996-1010",
+      "email": "jobs@apple.com",
+      "salary": "$150,000 - $200,000",
+      "job_type": ["full-time", "onsite"],
+      "job_description": "We are seeking a highly skilled and experienced iOS developer to design and develop cutting-edge iOS applications.",
+      "job_responsibility": "Responsibilities include writing clean, efficient, and well-documented code, collaborating with cross-functional teams, and contributing to the overall software architecture.",
+      "educational_requirements": "Bachelor's or Master's degree in Computer Science or related field.",
+      "experiences": "10+ years of experience in iOS development.",
+      "key_id": "job1205"
+   },
+   {
+      "id": 6,
+      "image": "https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png",
+      "company_name": "Google",
+      "position_name": "Machine Learning Engineer",
+      "company_address": "1600 Amphitheatre Parkway, Mountain View, CA 94043, USA",
+      "phone": "+1-650-253-0000",
+      "email": "jobs@google.com",
+      "salary": "$180,000 - $220,000",
+      "job_type": ["full-time", "remote"],
+      "job_description": "We are seeking a talented and experienced Machine Learning Engineer to build and deploy machine learning models.",
+      "job_responsibility": "Responsibilities include designing and implementing machine learning algorithms, improving model accuracy and efficiency, and collaborating with cross-functional teams to integrate models into products and services.",
+      "educational_requirements": "Master's or PhD degree in Computer Science, Statistics, Mathematics, or related field.",
+      "experiences": "5+ years of experience in machine learning engineering or related field.",
+      "key_id": "job2356"
+   }
+
  ]
  

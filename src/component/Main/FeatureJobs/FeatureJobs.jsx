@@ -1,10 +1,10 @@
 import React from 'react';
 import JobCard from './JobCard';
+import { Link, useNavigate } from 'react-router-dom';
 
 const FeatureJobs = ({jobs}) => {
-
   
-
+ 
     return (
         <div className='container mt-4'>
           <div className='text-center'>
@@ -17,7 +17,8 @@ const FeatureJobs = ({jobs}) => {
            </div>
 
            <div className='text-center my-4'>
-            <button type="button" className="btn btn-primary">See All Jobs</button>
+            <Link to='/app' >
+            <button  type="button" className="btn btn-primary">See All Jobs</button></Link>
            </div>
            
 
