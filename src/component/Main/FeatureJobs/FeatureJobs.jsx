@@ -2,7 +2,7 @@ import React from 'react';
 import JobCard from './JobCard';
 
 const FeatureJobs = ({jobs}) => {
-  console.log(jobs);
+
     return (
         <div className='container mt-4'>
           <div className='text-center'>

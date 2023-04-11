@@ -1,6 +1,7 @@
 import { faLocation, faLocationDot, faMapLocation } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const JobCard = ({job}) => {
     let {id,company_name,position_name,company_address,salary,job_type,image}=job
@@ -23,7 +24,7 @@ const JobCard = ({job}) => {
            <span className='fs-6 fw-bold '>{salary}</span> 
          </div>
         <div className='bottom-0'>
-             <button type="button" className="btn btn-primary mt-auto">View Details</button>
+             <Link to={`/main/${id}`} className="btn btn-primary mt-auto">View Details</Link>
         </div>
        
 

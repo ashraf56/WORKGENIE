@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg bg-body my-4">
+            <nav className="navbar  navbar-expand-lg bg-body my-4">
   <div className="container">  
   <Link className="navbar-brand fw-bold" href="#"><span className='fw-Bold text-success'>WORK</span>GENIE</Link>
     <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,7 +15,7 @@ const Header = () => {
       
       <ul className="navbar-nav m-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <Link to='/' className="nav-link active" aria-current="page" href="#">Home</Link>
+          <Link to='/main' className="nav-link active" aria-current="page" href="#">Home</Link>
         </li>
         <li className="nav-item">
           <Link to='/statistics' className="nav-link" href="#">Statistics</Link>
