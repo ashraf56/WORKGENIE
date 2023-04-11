@@ -2,7 +2,7 @@ import { faBox, faContactBook, faLocationDot, faMailBulk } from '@fortawesome/fr
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
-import '../FeatureJobs/FeatureJobs.css'
+import { addToDb } from '../../fakedb';
 
 const JobDetail = () => {
 let {id}=useParams();
@@ -19,6 +19,12 @@ useEffect(()=>{
 
 
 let {experiences,educational_requirements,job_responsibility,job_description,job_type,salary,email,phone,company_address,position_name}=jobs;
+
+
+let addData=(jobs)=>{
+    addToDb(jobs.company_name)
+
+  }
 
     return (
         <div>
@@ -70,7 +76,7 @@ let {experiences,educational_requirements,job_responsibility,job_description,job
       
 
 </div>
-<button type="button" className="btn btn-success fw-bold ">Apply now</button>
+<button type="button" onClick={()=>addData(jobs)} className="btn btn-success fw-bold ">Apply now</button>
 
             </div>
             </div>
