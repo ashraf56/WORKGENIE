@@ -10,7 +10,7 @@ const AppliedJobs = () => {
     return (
         <div>
        <div className='text-center my-5  bg-success bg-opacity-75  '  >
-    <h2 className='py-5 text-light'>All Applied jobs </h2>
+    <h2 className='py-5 text-light text-uppercase'>All Applied jobs </h2>
 </div>
        <div>
 

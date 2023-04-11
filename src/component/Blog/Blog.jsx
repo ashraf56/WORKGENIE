@@ -4,7 +4,7 @@ const Blog = () => {
     return (
         <div>
           <div className='text-center my-5  bg-success bg-opacity-75  '  >
-    <h2 className='py-5 text-light'>Blog FAQ </h2>
+    <h2 className='py-5 text-light text-uppercase'>Blog FAQ </h2>
 </div>
             
            <div className="accordion " id="accordionExample">
