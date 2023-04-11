@@ -1,7 +1,7 @@
 import { getShoppingCart } from "./fakedb";
 
 let Jobloder =async ()=>{
-    let load=await fetch('JobData.json')
+    let load=await fetch('/JobData.json')
     let product= await load.json();
     
     let storcart=getShoppingCart();

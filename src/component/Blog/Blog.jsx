@@ -3,9 +3,10 @@ import React from 'react';
 const Blog = () => {
     return (
         <div>
-            <div className='fw-bold fs-3 text-center my-5'>
-                <p>Blog FAQ</p>
-            </div>
+          <div className='text-center my-5  bg-success bg-opacity-75  '  >
+    <h2 className='py-5 text-light'>Blog FAQ </h2>
+</div>
+            
            <div className="accordion " id="accordionExample">
   <div className="accordion-item">
     <h2 className="accordion-header">
@@ -42,7 +43,8 @@ const Blog = () => {
     </h2>
     <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      useMemo() is a built-in React hook .It is used for performance optimization..It is returns a memoized value.useMemo can improve performance by avoiding unnecessary re-rendering of components that depend on expensive calculations.
+
       </div>
     </div>
   </div>
@@ -54,7 +56,8 @@ const Blog = () => {
     </h2>
     <div id="collapseThree3" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        A customhook is a js function and it starts with 'use' .it can call other hooks.
+      A custom hook allows us to extract some component logic into a reusable function that can be shared among different components.
       </div>
     </div>
   </div>
