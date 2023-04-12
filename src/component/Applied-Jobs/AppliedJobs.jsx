@@ -5,17 +5,41 @@ import AppliedCard from './AppliedCard';
 const AppliedJobs = () => {
     let showjobs=useLoaderData();
      let [jobs,Setjobs]=useState(showjobs);
-    console.log(jobs);
+     const [jobType, setJobType] = useState("all");
+
+     const handleJobTypeClick = (type) => {
+       if (jobType === type) {
+      setJobType("all");
+    } else {
+      setJobType(type);
+    }
+     };
+   
+     const filteredJobs = jobs.filter((job) => {
+       if (jobType === "all") {
+         return true;
+       } else {
+         return job.job_type.includes(jobType);
+       }
+     });
 
     return (
         <div>
        <div className='text-center my-5  bg-success bg-opacity-75  '  >
     <h2 className='py-5 text-light text-uppercase'>All Applied jobs </h2>
 </div>
+
+<div className='text-end my-3'>
+    <a  className={jobType === "onsite" ? "active" : ""}>
+<button type="button" onClick={() => handleJobTypeClick("onsite")} className="btn btn-success fw-bold mx-2 ">Onsite</button></a>
+
+<a  className={jobType === "remote" ? "active" : ""}>
+<button type="button" onClick={() => handleJobTypeClick("remote")} className="btn btn-success fw-bold ">Remote</button></a>
+</div>
        <div>
 
 {
-    jobs.map(job=><AppliedCard job={job} key={job.id} />)
+    filteredJobs.map(job=><AppliedCard job={job} key={job.id} />)
 }        
        </div>
 

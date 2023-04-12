@@ -6,10 +6,10 @@ let Jobloder =async ()=>{
     
     let storcart=getShoppingCart();
     let saveCart=[]
-    for (const company_name in storcart) {
-       let addedProduct=product.find(pd=> pd.company_name===company_name);
+    for (const key_id in storcart) {
+       let addedProduct=product.find(pd=> pd.key_id===key_id);
        if(addedProduct){
-        let quantity=storcart[company_name];
+        let quantity=storcart[key_id];
         addedProduct.quantity=quantity
     saveCart.push(addedProduct)
     }

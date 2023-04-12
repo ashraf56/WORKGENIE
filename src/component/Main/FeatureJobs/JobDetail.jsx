@@ -22,7 +22,7 @@ let {experiences,educational_requirements,job_responsibility,job_description,job
 
 
 let addData=(jobs)=>{
-    addToDb(jobs.company_name)
+    addToDb(jobs.key_id)
 
   }
 

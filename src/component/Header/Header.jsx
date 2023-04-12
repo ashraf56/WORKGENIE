@@ -27,7 +27,7 @@ const Header = () => {
           <Link to='/blog' className="nav-link ">Blog</Link>
         </li>
       </ul>
-      <Link to='/blog' className="nav-link ">
+      <Link to='/blogs' className="nav-link ">
         <button className="btn btn-outline-success" type="submit">Star Applying</button></Link>
       
     </div>
