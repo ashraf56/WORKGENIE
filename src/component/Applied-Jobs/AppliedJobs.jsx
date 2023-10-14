@@ -38,7 +38,7 @@ const AppliedJobs = () => {
 </div>
        <div>
 
-{
+{filteredJobs.length===0?  <div className='text-center text-uppercase alert alert-primary'>Please  apply for any jobs First</div>  :
     filteredJobs.map(job=><AppliedCard job={job} key={job.id} />)
 }        
        </div>

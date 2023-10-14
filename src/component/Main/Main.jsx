@@ -7,7 +7,8 @@ import { useLoaderData, useNavigate } from 'react-router-dom';
 const Main = () => {
     let jobs=useLoaderData();
   
-    const [cards, setcard] = useState(jobs.slice(2,6));
+    const [cards, setcard] = useState(jobs);
+  
 
  
 

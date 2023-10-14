@@ -1,7 +1,16 @@
 This is a job application website. 
 
+# Technologies Used
+- React js
+- Firebase
+- LocalStorage 
+- Bootstrap
+- Vite
+- React Router
+- Recharts
 
-Feature of this website.
+
+# Feature of this website.
 
 - Anyone can see job post from Trusted source.
 - Anyone can apply for jobs.
