@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { addToDb } from '../../fakedb';
+import toast, { Toaster } from 'react-hot-toast';
 
 const JobDetail = () => {
 let {id}=useParams();
@@ -22,7 +23,12 @@ let {experiences,educational_requirements,job_responsibility,job_description,job
 
 
 let addData=(jobs)=>{
-    addToDb(jobs.key_id)
+    
+        addToDb(jobs.key_id) 
+         
+   
+
+
 
   }
 
@@ -77,7 +83,7 @@ let addData=(jobs)=>{
 
 </div>
 <button type="button" onClick={()=>addData(jobs)} className="btn btn-success fw-bold ">Apply now</button>
-
+<Toaster />
             </div>
             </div>
 

@@ -1,9 +1,10 @@
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useState } from 'react';
+import { Toaster } from 'react-hot-toast';
 import { Link } from 'react-router-dom';
 
-const AppliedCard = ({job}) => {
+const AppliedCard = ({job,deleteJobs}) => {
     let {id,company_name,position_name,company_address,salary,job_type,image}=job;
 
     return (
@@ -27,10 +28,13 @@ const AppliedCard = ({job}) => {
          </div>
       </div>
     </div>
-<div className="col-md-2 ">
-<div className='mt-5'>
-             <Link to={`/main/${id}`} className="btn btn-primary mt-5">View Details</Link>
+<div className="col-md-2 d-flex ">
+<div className='mt-5 '>
+             <Link to={`/main/${id}`} className="btn btn-primary btn-sm mt-5">View Details</Link>
+            <button onClick={deleteJobs} className="btn btn-primary btn-sm mt-5 ms-1 " >Delete</button>
+            <Toaster />
         </div>
+
 </div>
 
   </div>

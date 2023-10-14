@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import AppliedCard from './AppliedCard';
+import { deleteShoppingCart } from '../fakedb';
 
 const AppliedJobs = () => {
     let showjobs=useLoaderData();
      let [jobs,Setjobs]=useState(showjobs);
      const [jobType, setJobType] = useState("all");
-
+const deleteJobs=()=>{
+  deleteShoppingCart()
+}
      const handleJobTypeClick = (type) => {
        if (jobType === type) {
       setJobType("all");
@@ -38,8 +41,8 @@ const AppliedJobs = () => {
 </div>
        <div>
 
-{filteredJobs.length===0?  <div className='text-center text-uppercase alert alert-primary'>Please  apply for any jobs First</div>  :
-    filteredJobs.map(job=><AppliedCard job={job} key={job.id} />)
+{filteredJobs.length===0 ?  <div className='text-center text-uppercase alert alert-primary'>Please  apply for any jobs First</div>  :
+    filteredJobs.map(job=><AppliedCard job={job} key={job.id} deleteJobs={deleteJobs} />)
 }        
        </div>
 
