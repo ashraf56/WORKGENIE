@@ -3,22 +3,15 @@ import Mainbanner from './Mainbanner';
 import MainCategory from './MainCategory/MainCategory';
 import FeatureJobs from './FeatureJobs/FeatureJobs';
 import { useLoaderData, useNavigate } from 'react-router-dom';
-
 const Main = () => {
-    let jobs=useLoaderData();
-  
+    let jobs = useLoaderData();
     const [cards, setcard] = useState(jobs);
-  
-
- 
-
     return (
         <div>
-            <Mainbanner/>
-            <MainCategory/>
+            <Mainbanner />
+            <MainCategory />
             <FeatureJobs jobs={cards} key={cards.id} />
         </div>
     );
 };
-
 export default Main;
