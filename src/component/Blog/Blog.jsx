@@ -5,7 +5,7 @@ const Blog = () => {
     fetch('https://www.googleapis.com/blogger/v3/blogs/blogId')
   }, [])
   return (
-    <div>
+    <div className='container'>
       <div className='text-center my-5  bg-info bg-opacity-75  '  >
         <h2 className='py-5 text-light text-uppercase'>Blog FAQ </h2>
       </div>

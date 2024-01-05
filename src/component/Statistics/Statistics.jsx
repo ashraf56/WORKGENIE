@@ -20,7 +20,7 @@ const Statistics = () => {
     { name: "a8", mark: 60 }
   ];
   return (
-    <div>
+    <div className='container'>
       <div className='text-center my-5  bg-opacity-75  '  >
         <h2 className='py-5 text-uppercase'>Statistics</h2>
       </div>

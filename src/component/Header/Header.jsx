@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 const Header = () => {
   return (
-    <div>
-      <nav className="navbar  navbar-expand-lg bg-body my-4">
+    <div className='container'>
+      <nav className="navbar  navbar-expand-lg bg-body ">
         <div className="container">
           <Link className="navbar-brand fw-bold" href="#"><span className='fw-Bold text-info'>WORK</span>GENIE</Link>
           <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@ const Header = () => {
               </li>
             </ul>
             <Link to='/blogs' className="nav-link ">
-              <button className="btn btn-outline-info" type="submit">Star Applying</button></Link>
+              <button className="btn btn-outline-info" type="submit">Start Applying</button></Link>
           </div>
         </div>
       </nav>

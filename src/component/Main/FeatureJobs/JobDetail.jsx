@@ -17,7 +17,7 @@ const JobDetail = () => {
         addToDb(jobs.key_id)
     }
     return (
-        <div>
+        <div className='container'>
             <div className='text-center my-5  bg-info bg-opacity-75  '  >
                 <h2 className='py-5 text-light text-uppercase'>Work Details</h2>
             </div>

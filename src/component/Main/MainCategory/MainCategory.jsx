@@ -8,8 +8,8 @@ const MainCategory = () => {
             .then(data => setCategory(data.categories))
     }, [])
     return (
-        <div className='container text-center my-5'>
-            <h2>Job Category List</h2>
+        <div className='container text-center my-5 '>
+            <h2 className='fw-bold'>Job <span className='text-info'>Category</span> List</h2>
             <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
             <div className=' row row-cols-1 row-cols-md-4 g-4 pt-3'>
                 {category.map(list => <CatagoryCard list={list} key={list.id}></CatagoryCard>)
