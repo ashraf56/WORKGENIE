@@ -17,5 +17,5 @@ This is a job application website.
 - Anyone can see which job he/she applied for.
 - Each job post has sufficient details.
 
-Live link
+# Live link
 https://relaxed-otter-71f1f2.netlify.app/
